@@ -1,0 +1,35 @@
+
+=== 2025-01-08 18:53:51 ===
+--- HTTP Response ---
+From: 140.210.65.88:80
+Status: 200
+
+Response Headers:
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 08 Jan 2025 10:53:48 GMT
+Content-Type: text/javascript; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: PHP/8.1.20
+Set-Cookie: PHPSESSID=17363336308716-1d5412a7e3de3468485091065affe8684f87dd79; path=/; domain=.huangye88.com
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Pragma: no-cache
+Cache-control: private
+Access-Control-Allow-Origin: *
+Set-Cookie: ACCESS_BLOCKER_DDOS=5fae78a3c2cac194251b55d5957ab2d7; path=/; domain=huangye88.com
+Access-Control-Allow-Origin: *
+Origin-Agent-Cluster: ?0
+
+d92
+if(document.getElementById("loginstate2")) document.getElementById("loginstate2").innerHTML='<a href="https://my.huangye88.com/login.html?from=my" class="co_log">管理商铺入口</a>';window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMinilist":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//static.huangye88.cn/bd/api/js/share.js?v=89860593.js'];
+var $divFloatToolsView = $('#divFloatToolsView'),$aFloatTools_Show = $('#aFloatTools_Show'),$aFloatTools_Hide = $('#aFloatTools_Hide');
+$aFloatTools_Show.on('click', function() {
+    $divFloatToolsView.animate({
+        width: 'show',
+        opacity: 'show'
+    },
+    'normal',
+    function() {
+  
+

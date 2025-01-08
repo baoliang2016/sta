@@ -1,0 +1,13 @@
+
+=== 2025-01-08 18:52:26 ===
+
+=== DNS Query ===
+Transaction ID: 0xd2e3
+Flags: 0x0100
+
+--- Queries (1) ---
+Query #1:
+  Domain: www.a.shifen.com
+  Type: 28 (AAAA)
+  Class: 1 (IN)
+

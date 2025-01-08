@@ -1,0 +1,19 @@
+
+=== 2025-01-08 18:53:54 ===
+--- HTTP Request ---
+From: 10.211.55.17:36330
+Method: GET
+URI: /v.gif?pid=307&type=3071&sign=&desturl=&linkid=m5ns7qpqejw&apitype=1
+
+Request Headers:
+GET /v.gif?pid=307&type=3071&sign=&desturl=&linkid=m5ns7qpqejw&apitype=1 HTTP/1.1
+Host: nsclick.baidu.com
+User-Agent: Mozilla/5.0 (X11; Linux aarch64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://shtongxi.b2b.huangye88.com/
+
+
+

@@ -1,0 +1,24 @@
+
+=== 2025-01-08 18:45:02 ===
+
+=== DNS Query ===
+Transaction ID: 0x196b
+Flags: 0x0100
+
+--- Questions (1) ---
+Name: 
+Type: 256
+Class: 0
+
+
+=== 2025-01-08 18:45:02 ===
+
+=== DNS Response ===
+Transaction ID: 0x196b
+Flags: 0x8180
+
+--- Questions (1) ---
+Name: 
+Type: 256
+Class: 0
+

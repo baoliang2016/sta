@@ -1,0 +1,63 @@
+
+=== 2025-01-08 18:53:44 ===
+--- HTTP Response ---
+From: 92.122.244.25:80
+Status: 200
+
+Response Headers:
+HTTP/1.1 200 OK
+Server: nginx
+Content-Type: application/ocsp-response
+Content-Length: 504
+ETag: "95605AFE1A781871F2A64A66567005786F18168A7CEA025B0E9A3013D7D8DA95"
+Last-Modified: Tue, 07 Jan 2025 15:51:00 UTC
+Cache-Control: public, no-transform, must-revalidate, max-age=5803
+Expires: Wed, 08 Jan 2025 12:30:27 GMT
+Date: Wed, 08 Jan 2025 10:53:44 GMT
+Connection: keep-alive
+
+0‚ô
+
+
+
+=== 2025-01-08 18:53:46 ===
+--- HTTP Response ---
+From: 92.122.244.25:80
+Status: 200
+
+Response Headers:
+HTTP/1.1 200 OK
+Server: nginx
+Content-Type: application/ocsp-response
+Content-Length: 504
+ETag: "4FE1177FCC7B251763C4E2FF11B24BD2F8B11293EB1AC8DEF8FEB56CAD7181BB"
+Last-Modified: Wed, 08 Jan 2025 01:24:00 UTC
+Cache-Control: public, no-transform, must-revalidate, max-age=6859
+Expires: Wed, 08 Jan 2025 12:48:05 GMT
+Date: Wed, 08 Jan 2025 10:53:46 GMT
+Connection: keep-alive
+
+0‚ô
+
+
+
+=== 2025-01-08 18:54:13 ===
+--- HTTP Response ---
+From: 92.122.244.25:80
+Status: 200
+
+Response Headers:
+HTTP/1.1 200 OK
+Server: nginx
+Content-Type: application/ocsp-response
+Content-Length: 504
+ETag: "4914BE5E746663F4592A0871C1E0010E19AF88859CD0EACCC4828AEF1BDA162F"
+Last-Modified: Mon, 06 Jan 2025 16:48:00 UTC
+Cache-Control: public, no-transform, must-revalidate, max-age=6688
+Expires: Wed, 08 Jan 2025 12:45:41 GMT
+Date: Wed, 08 Jan 2025 10:54:13 GMT
+Connection: keep-alive
+
+0‚ô
+
+

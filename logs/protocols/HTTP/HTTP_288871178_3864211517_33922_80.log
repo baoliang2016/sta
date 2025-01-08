@@ -1,0 +1,271 @@
+
+=== 2025-01-08 18:53:50 ===
+--- HTTP Request ---
+From: 10.211.55.17:33922
+Method: GET
+URI: /images/qiye/0/css.css?v=202309
+
+Request Headers:
+GET /images/qiye/0/css.css?v=202309 HTTP/1.1
+Host: static.huangye88.cn
+User-Agent: Mozilla/5.0 (X11; Linux aarch64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://shtongxi.b2b.huangye88.com/
+If-Modified-Since: Thu, 23 May 2024 03:26:00 GMT
+If-None-Match: W/"664eb748-763b"
+
+
+
+
+=== 2025-01-08 18:53:50 ===
+--- HTTP Request ---
+From: 10.211.55.17:33922
+Method: GET
+URI: /images/beian.png
+
+Request Headers:
+GET /images/beian.png HTTP/1.1
+Host: static.huangye88.cn
+User-Agent: Mozilla/5.0 (X11; Linux aarch64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://shtongxi.b2b.huangye88.com/
+
+
+
+
+=== 2025-01-08 18:53:51 ===
+--- HTTP Request ---
+From: 10.211.55.17:33922
+Method: GET
+URI: /js/sharecode/img/weibo.png
+
+Request Headers:
+GET /js/sharecode/img/weibo.png HTTP/1.1
+Host: static.huangye88.cn
+User-Agent: Mozilla/5.0 (X11; Linux aarch64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://shtongxi.b2b.huangye88.com/
+If-Modified-Since: Tue, 12 Mar 2024 05:59:37 GMT
+If-None-Match: "65efef49-292f"
+
+
+
+
+=== 2025-01-08 18:53:51 ===
+--- HTTP Request ---
+From: 10.211.55.17:33922
+Method: GET
+URI: /js/sharecode/img/qzone.png
+
+Request Headers:
+GET /js/sharecode/img/qzone.png HTTP/1.1
+Host: static.huangye88.cn
+User-Agent: Mozilla/5.0 (X11; Linux aarch64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://shtongxi.b2b.huangye88.com/
+If-Modified-Since: Tue, 12 Mar 2024 05:59:37 GMT
+If-None-Match: "65efef49-27e3"
+
+
+
+
+=== 2025-01-08 18:53:51 ===
+--- HTTP Request ---
+From: 10.211.55.17:33922
+Method: GET
+URI: /js/sharecode/img/baidu.png
+
+Request Headers:
+GET /js/sharecode/img/baidu.png HTTP/1.1
+Host: static.huangye88.cn
+User-Agent: Mozilla/5.0 (X11; Linux aarch64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://shtongxi.b2b.huangye88.com/
+If-Modified-Since: Tue, 12 Mar 2024 05:59:37 GMT
+If-None-Match: "65efef49-4888"
+
+
+
+
+=== 2025-01-08 18:53:51 ===
+--- HTTP Request ---
+From: 10.211.55.17:33922
+Method: GET
+URI: /images/qiye/0/fatxt.png?v=2020
+
+Request Headers:
+GET /images/qiye/0/fatxt.png?v=2020 HTTP/1.1
+Host: static.huangye88.cn
+User-Agent: Mozilla/5.0 (X11; Linux aarch64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://static.huangye88.cn/images/qiye/0/css.css?v=202309
+If-Modified-Since: Tue, 12 Mar 2024 05:59:20 GMT
+If-None-Match: "65efef38-4e0"
+
+
+
+
+=== 2025-01-08 18:53:51 ===
+--- HTTP Request ---
+From: 10.211.55.17:33922
+Method: GET
+URI: /images/qiye/0/icon.png?v=1
+
+Request Headers:
+GET /images/qiye/0/icon.png?v=1 HTTP/1.1
+Host: static.huangye88.cn
+User-Agent: Mozilla/5.0 (X11; Linux aarch64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://static.huangye88.cn/images/qiye/0/css.css?v=202309
+If-Modified-Since: Tue, 12 Mar 2024 05:59:20 GMT
+If-None-Match: "65efef38-41dc"
+
+
+
+
+=== 2025-01-08 18:53:51 ===
+--- HTTP Request ---
+From: 10.211.55.17:33922
+Method: GET
+URI: /images/qiye/wxjt.png
+
+Request Headers:
+GET /images/qiye/wxjt.png HTTP/1.1
+Host: static.huangye88.cn
+User-Agent: Mozilla/5.0 (X11; Linux aarch64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://shtongxi.b2b.huangye88.com/
+If-Modified-Since: Tue, 12 Mar 2024 05:59:21 GMT
+If-None-Match: "65efef39-2b5"
+
+
+
+
+=== 2025-01-08 18:53:51 ===
+--- HTTP Request ---
+From: 10.211.55.17:33922
+Method: GET
+URI: /bd/api/js/share.js?v=89860593.js
+
+Request Headers:
+GET /bd/api/js/share.js?v=89860593.js HTTP/1.1
+Host: static.huangye88.cn
+User-Agent: Mozilla/5.0 (X11; Linux aarch64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://shtongxi.b2b.huangye88.com/
+If-Modified-Since: Tue, 12 Mar 2024 05:59:39 GMT
+If-None-Match: W/"65efef4b-437f"
+
+
+
+
+=== 2025-01-08 18:53:51 ===
+--- HTTP Request ---
+From: 10.211.55.17:33922
+Method: GET
+URI: /bd/api/js/share/share_api.js?v=226108fe.js
+
+Request Headers:
+GET /bd/api/js/share/share_api.js?v=226108fe.js HTTP/1.1
+Host: static.huangye88.cn
+User-Agent: Mozilla/5.0 (X11; Linux aarch64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://shtongxi.b2b.huangye88.com/
+If-Modified-Since: Tue, 12 Mar 2024 05:59:39 GMT
+If-None-Match: "65efef4b-27c"
+
+
+
+
+=== 2025-01-08 18:53:51 ===
+--- HTTP Request ---
+From: 10.211.55.17:33922
+Method: GET
+URI: /bd/api/js/base/tangram.js?v=37768233.js
+
+Request Headers:
+GET /bd/api/js/base/tangram.js?v=37768233.js HTTP/1.1
+Host: static.huangye88.cn
+User-Agent: Mozilla/5.0 (X11; Linux aarch64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://shtongxi.b2b.huangye88.com/
+If-Modified-Since: Tue, 12 Mar 2024 05:59:39 GMT
+If-None-Match: W/"65efef4b-1aae7"
+
+
+
+
+=== 2025-01-08 18:53:51 ===
+--- HTTP Request ---
+From: 10.211.55.17:33922
+Method: GET
+URI: /bd/api/css/share_style0_24.css
+
+Request Headers:
+GET /bd/api/css/share_style0_24.css HTTP/1.1
+Host: static.huangye88.cn
+User-Agent: Mozilla/5.0 (X11; Linux aarch64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://shtongxi.b2b.huangye88.com/
+If-Modified-Since: Tue, 12 Mar 2024 05:59:39 GMT
+If-None-Match: W/"65efef4b-ee8"
+
+
+
+
+=== 2025-01-08 18:53:54 ===
+--- HTTP Request ---
+From: 10.211.55.17:33922
+Method: GET
+URI: /bd/api/js/trans/logger.js?v=60603cb3.js
+
+Request Headers:
+GET /bd/api/js/trans/logger.js?v=60603cb3.js HTTP/1.1
+Host: static.huangye88.cn
+User-Agent: Mozilla/5.0 (X11; Linux aarch64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://shtongxi.b2b.huangye88.com/
+If-Modified-Since: Tue, 12 Mar 2024 05:59:39 GMT
+If-None-Match: W/"65efef4b-89b"
+
+
+
