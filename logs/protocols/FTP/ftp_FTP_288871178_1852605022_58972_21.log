@@ -1,0 +1,192 @@
+
+=== FTP Request at Fri Jan 10 11:01:10 2025
+Command: TYPE
+Argument: A
+
+=== FTP Request at Fri Jan 10 11:01:11 2025
+Command: PASV
+
+Argument: A
+
+=== FTP Request at Fri Jan 10 11:01:11 2025
+Command: LIST
+
+Argument: A
+
+=== FTP Request at Fri Jan 10 11:01:19 2025
+Command: TYPE
+Argument: I
+
+=== FTP Request at Fri Jan 10 11:01:19 2025
+Command: PASV
+
+Argument: I
+
+=== FTP Request at Fri Jan 10 11:01:20 2025
+Command: STOR
+Argument: /data/Test.zip
+
+=== FTP Request at Fri Jan 10 11:04:51 2025
+Source IP: 10.211.55.17
+Source Port: 58972
+Destination IP: 94.130.108.110
+Destination Port: 21
+Command: TYPE
+Argument: A
+Connection ID: FTP_288871178_1852605022_58972_21
+
+
+=== FTP Request at Fri Jan 10 11:04:52 2025
+Source IP: 10.211.55.17
+Source Port: 58972
+Destination IP: 94.130.108.110
+Destination Port: 21
+Command: PASV
+
+Argument: A
+Connection ID: FTP_288871178_1852605022_58972_21
+
+
+=== FTP Request at Fri Jan 10 11:04:52 2025
+Source IP: 10.211.55.17
+Source Port: 58972
+Destination IP: 94.130.108.110
+Destination Port: 21
+Command: LIST
+
+Argument: A
+Connection ID: FTP_288871178_1852605022_58972_21
+
+
+=== FTP Request at Fri Jan 10 11:04:56 2025
+Source IP: 10.211.55.17
+Source Port: 58972
+Destination IP: 94.130.108.110
+Destination Port: 21
+Command: TYPE
+Argument: I
+Connection ID: FTP_288871178_1852605022_58972_21
+
+
+=== FTP Request at Fri Jan 10 11:04:56 2025
+Source IP: 10.211.55.17
+Source Port: 58972
+Destination IP: 94.130.108.110
+Destination Port: 21
+Command: PASV
+
+Argument: I
+Connection ID: FTP_288871178_1852605022_58972_21
+
+
+=== FTP Request at Fri Jan 10 11:04:56 2025
+Source IP: 10.211.55.17
+Source Port: 58972
+Destination IP: 94.130.108.110
+Destination Port: 21
+Command: RETR
+Argument: Test.zip
+File: Test.zip
+Operation: Download
+Connection ID: FTP_288871178_1852605022_58972_21
+
+
+=== FTP Request at Fri Jan 10 11:05:38 2025
+Source IP: 10.211.55.17
+Source Port: 58972
+Destination IP: 94.130.108.110
+Destination Port: 21
+Command: ÿôÿ
+Argument: Test.zip
+File: Test.zip
+Operation: Download
+Connection ID: FTP_288871178_1852605022_58972_21
+
+
+=== FTP Request at Fri Jan 10 11:05:38 2025
+Source IP: 10.211.55.17
+Source Port: 58972
+Destination IP: 94.130.108.110
+Destination Port: 21
+Command: òABOR
+
+Argument: Test.zip
+File: Test.zip
+Operation: Download
+Connection ID: FTP_288871178_1852605022_58972_21
+
+
+=== FTP Request at Fri Jan 10 11:05:44 2025
+Source IP: 10.211.55.17
+Source Port: 58972
+Destination IP: 94.130.108.110
+Destination Port: 21
+Command: TYPE
+Argument: A
+File: Test.zip
+Operation: Download
+Connection ID: FTP_288871178_1852605022_58972_21
+
+
+=== FTP Request at Fri Jan 10 11:05:44 2025
+Source IP: 10.211.55.17
+Source Port: 58972
+Destination IP: 94.130.108.110
+Destination Port: 21
+Command: PASV
+
+Argument: A
+File: Test.zip
+Operation: Download
+Connection ID: FTP_288871178_1852605022_58972_21
+
+
+=== FTP Request at Fri Jan 10 11:05:44 2025
+Source IP: 10.211.55.17
+Source Port: 58972
+Destination IP: 94.130.108.110
+Destination Port: 21
+Command: LIST
+
+Argument: A
+File: Test.zip
+Operation: Download
+Connection ID: FTP_288871178_1852605022_58972_21
+
+
+=== FTP Request at Fri Jan 10 11:05:53 2025
+Source IP: 10.211.55.17
+Source Port: 58972
+Destination IP: 94.130.108.110
+Destination Port: 21
+Command: TYPE
+Argument: I
+File: Test.zip
+Operation: Download
+Connection ID: FTP_288871178_1852605022_58972_21
+
+
+=== FTP Request at Fri Jan 10 11:05:54 2025
+Source IP: 10.211.55.17
+Source Port: 58972
+Destination IP: 94.130.108.110
+Destination Port: 21
+Command: PASV
+
+Argument: I
+File: Test.zip
+Operation: Download
+Connection ID: FTP_288871178_1852605022_58972_21
+
+
+=== FTP Request at Fri Jan 10 11:05:54 2025
+Source IP: 10.211.55.17
+Source Port: 58972
+Destination IP: 94.130.108.110
+Destination Port: 21
+Command: STOR
+Argument: aaa.zip
+File: aaa.zip
+Operation: Upload
+Connection ID: FTP_288871178_1852605022_58972_21
+

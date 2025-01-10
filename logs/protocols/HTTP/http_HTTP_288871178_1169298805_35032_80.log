@@ -1,0 +1,73 @@
+
+=== HTTP Transaction at Fri Jan 10 11:32:37 2025
+Source IP: 10.211.55.17
+Source Port: 35032
+Destination IP: 117.21.178.69
+Destination Port: 80
+
+--- Request ---
+Method: GET
+URI: /live/user/1736785/1536565404018945000-2.jpg@1e_1c_220w_220h_90Q
+Host: Unknown
+
+Request Headers:
+GET /live/user/1736785/1536565404018945000-2.jpg@1e_1c_220w_220h_90Q HTTP/1.1
+Host: oss.huangye88.net
+User-Agent: Mozilla/5.0 (X11; Linux aarch64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://shtongxi.b2b.huangye88.com/
+If-Modified-Since: Thu, 05 Dec 2024 13:12:57 GMT
+If-None-Match: "6751a6d9-6c26"
+
+
+
+=== HTTP Transaction at Fri Jan 10 11:32:37 2025
+Source IP: 10.211.55.17
+Source Port: 35032
+Destination IP: 117.21.178.69
+Destination Port: 80
+
+--- Request ---
+Method: GET
+URI: /live/2017/11/08/61010a652dd211b8c920f1605ccb3eaa.jpg@1e_1c_220w_220h_90Q
+Host: Unknown
+
+Request Headers:
+GET /live/2017/11/08/61010a652dd211b8c920f1605ccb3eaa.jpg@1e_1c_220w_220h_90Q HTTP/1.1
+Host: oss.huangye88.net
+User-Agent: Mozilla/5.0 (X11; Linux aarch64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://shtongxi.b2b.huangye88.com/
+If-Modified-Since: Mon, 14 Nov 2022 10:29:16 GMT
+If-None-Match: "6372187c-444f"
+
+
+
+=== HTTP Transaction at Fri Jan 10 11:32:37 2025
+Source IP: 10.211.55.17
+Source Port: 35032
+Destination IP: 117.21.178.69
+Destination Port: 80
+
+--- Request ---
+Method: GET
+URI: /live/2017/11/08/d76c8250cbb951c32c76de74fa2e9ef7.jpg@1e_1c_220w_220h_90Q
+Host: Unknown
+
+Request Headers:
+GET /live/2017/11/08/d76c8250cbb951c32c76de74fa2e9ef7.jpg@1e_1c_220w_220h_90Q HTTP/1.1
+Host: oss.huangye88.net
+User-Agent: Mozilla/5.0 (X11; Linux aarch64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://shtongxi.b2b.huangye88.com/
+
+

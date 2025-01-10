@@ -1,0 +1,46 @@
+
+--- Response ---
+Status Code: 200
+Content-Type: Unknown
+
+Response Headers:
+HTTP/1.1 200 OK
+Server: nginx
+Content-Type: application/ocsp-response
+Content-Length: 504
+ETag: "E53D37E344FBAE216A2541166CC72BB7324CF3FD3E28CE36A7C6737CBA77C0B0"
+Last-Modified: Tue, 07 Jan 2025 20:27:00 UTC
+Cache-Control: public, no-transform, must-revalidate, max-age=3128
+Expires: Fri, 10 Jan 2025 04:30:20 GMT
+Date: Fri, 10 Jan 2025 03:38:12 GMT
+Connection: keep-alive
+
+0‚ô
+
+
+Connection ID: HTTP_3384661309_288871178_80_32872
+=== End of Transaction ===
+
+
+--- Response ---
+Status Code: 200
+Content-Type: Unknown
+
+Response Headers:
+HTTP/1.1 200 OK
+Server: nginx
+Content-Type: application/ocsp-response
+Content-Length: 504
+ETag: "C405E27A3100731991F86C73B5FF697792B7821F5C4A8D4FAC6224F8A28A2058"
+Last-Modified: Thu, 09 Jan 2025 16:09:00 UTC
+Cache-Control: public, no-transform, must-revalidate, max-age=3088
+Expires: Fri, 10 Jan 2025 04:30:06 GMT
+Date: Fri, 10 Jan 2025 03:38:38 GMT
+Connection: keep-alive
+
+0‚ô
+
+
+Connection ID: HTTP_3384661309_288871178_80_32872
+=== End of Transaction ===
+

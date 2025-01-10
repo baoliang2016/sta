@@ -82,6 +82,16 @@ struct protocol_data {
             struct dns_record *authorities;
             struct dns_record *additionals;
         } dns;
+        struct {
+            char *command;           // FTP命令
+            char *argument;          // 命令参数
+            int response_code;       // 响应码
+            char *response_msg;      // 响应消息
+            char *filename;          // 文件名
+            size_t filesize;         // 文件大小
+            bool is_upload;          // 是否为上传操作
+            time_t timestamp;        // 操作时间戳
+        } ftp;
     };
     char *request;
     char *response;

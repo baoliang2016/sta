@@ -1,0 +1,26 @@
+
+=== HTTP Transaction at Fri Jan 10 11:32:43 2025
+Source IP: 10.211.55.17
+Source Port: 54416
+Destination IP: 104.18.21.226
+Destination Port: 80
+
+--- Request ---
+Method: POST
+URI: /gsrsaovsslca2018
+Host: Unknown
+
+Request Headers:
+POST /gsrsaovsslca2018 HTTP/1.1
+Host: ocsp.globalsign.com
+User-Agent: Mozilla/5.0 (X11; Linux aarch64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Content-Type: application/ocsp-request
+Content-Length: 79
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+
+0M0K0I0G0E0	+

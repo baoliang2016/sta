@@ -1,0 +1,66 @@
+
+--- Response ---
+Status Code: 304
+Content-Type: Unknown
+
+Response Headers:
+HTTP/1.1 304 Not Modified
+Server: nginx/1.18.0
+Date: Fri, 10 Jan 2025 03:38:19 GMT
+Last-Modified: Wed, 08 Nov 2023 02:03:59 GMT
+Connection: keep-alive
+ETag: "654aec8f-1c2f"
+Expires: Sat, 11 Jan 2025 03:38:19 GMT
+Cache-Control: max-age=86400
+Content-Type: image/jpeg
+
+
+
+Connection ID: HTTP_1169298805_288871178_80_34976
+=== End of Transaction ===
+
+
+--- Response ---
+Status Code: 304
+Content-Type: Unknown
+
+Response Headers:
+HTTP/1.1 304 Not Modified
+Server: nginx/1.18.0
+Date: Fri, 10 Jan 2025 03:38:19 GMT
+Last-Modified: Tue, 31 Oct 2023 08:58:14 GMT
+Connection: keep-alive
+ETag: "6540c1a6-6d57"
+Expires: Sat, 11 Jan 2025 03:38:19 GMT
+Cache-Control: max-age=86400
+Content-Type: image/jpeg
+
+
+
+Connection ID: HTTP_1169298805_288871178_80_34976
+=== End of Transaction ===
+
+
+--- Response ---
+Status Code: 200
+Content-Type: Unknown
+
+Response Headers:
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Fri, 10 Jan 2025 03:38:19 GMT
+Content-Type: application/octet-stream
+Content-Length: 19201
+Last-Modified: Tue, 19 Nov 2024 15:07:01 GMT
+Connection: keep-alive
+ETag: "673ca995-4b01"
+Expires: Sat, 11 Jan 2025 03:38:19 GMT
+Cache-Control: max-age=86400
+Content-Type: image/jpeg
+Accept-Ranges: bytes
+
+ÿØÿà
+
+Connection ID: HTTP_1169298805_288871178_80_34976
+=== End of Transaction ===
+

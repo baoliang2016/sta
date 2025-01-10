@@ -1,0 +1,23 @@
+
+--- Response ---
+Status Code: 200
+Content-Type: Unknown
+
+Response Headers:
+HTTP/1.1 200 OK
+Date: Fri, 10 Jan 2025 03:38:25 GMT
+Content-Type: application/x-javascript
+Transfer-Encoding: chunked
+Connection: keep-alive
+Last-Modified: Wed, 28 Nov 2018 07:43:20 GMT
+Cache-Control: s-maxage=600, max-age=600
+Expires: Fri, 10 Jan 2025 03:48:25 GMT
+KCS-Via: HIT from w-fc02.sxlloc;HIT from w-sc03.shyc2
+Content-Encoding: gzip
+
+75
+‹
+
+Connection ID: HTTP_58434940_288871178_80_47002
+=== End of Transaction ===
+

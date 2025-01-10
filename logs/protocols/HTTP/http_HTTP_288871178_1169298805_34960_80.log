@@ -1,0 +1,96 @@
+
+=== HTTP Transaction at Fri Jan 10 11:32:37 2025
+Source IP: 10.211.55.17
+Source Port: 34960
+Destination IP: 117.21.178.69
+Destination Port: 80
+
+--- Request ---
+Method: GET
+URI: /live/ueditor/php/upload/1736785/image/20230401/1680335757386197.jpg@1e_1c_220w_220h_90Q
+Host: Unknown
+
+Request Headers:
+GET /live/ueditor/php/upload/1736785/image/20230401/1680335757386197.jpg@1e_1c_220w_220h_90Q HTTP/1.1
+Host: oss10.huangye88.net
+User-Agent: Mozilla/5.0 (X11; Linux aarch64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://shtongxi.b2b.huangye88.com/
+If-Modified-Since: Sat, 14 Dec 2024 15:43:13 GMT
+If-None-Match: "675da791-1c83"
+
+
+
+=== HTTP Transaction at Fri Jan 10 11:32:37 2025
+Source IP: 10.211.55.17
+Source Port: 34960
+Destination IP: 117.21.178.69
+Destination Port: 80
+
+--- Request ---
+Method: GET
+URI: /live/ueditor/php/upload/1736785/image/20230401/1680335758683919.jpg@1e_1c_220w_220h_90Q
+Host: Unknown
+
+Request Headers:
+GET /live/ueditor/php/upload/1736785/image/20230401/1680335758683919.jpg@1e_1c_220w_220h_90Q HTTP/1.1
+Host: oss10.huangye88.net
+User-Agent: Mozilla/5.0 (X11; Linux aarch64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://shtongxi.b2b.huangye88.com/
+If-Modified-Since: Tue, 31 Oct 2023 08:58:14 GMT
+If-None-Match: "6540c1a6-3008"
+
+
+
+=== HTTP Transaction at Fri Jan 10 11:32:37 2025
+Source IP: 10.211.55.17
+Source Port: 34960
+Destination IP: 117.21.178.69
+Destination Port: 80
+
+--- Request ---
+Method: GET
+URI: /live/ueditor/php/upload/1736785/image/20230401/1680335757754374.jpg@1e_1c_220w_220h_90Q
+Host: Unknown
+
+Request Headers:
+GET /live/ueditor/php/upload/1736785/image/20230401/1680335757754374.jpg@1e_1c_220w_220h_90Q HTTP/1.1
+Host: oss10.huangye88.net
+User-Agent: Mozilla/5.0 (X11; Linux aarch64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://shtongxi.b2b.huangye88.com/
+
+
+
+=== HTTP Transaction at Fri Jan 10 11:32:37 2025
+Source IP: 10.211.55.17
+Source Port: 34960
+Destination IP: 117.21.178.69
+Destination Port: 80
+
+--- Request ---
+Method: GET
+URI: /live/ueditor/php/upload/1736785/image/20230401/1680335757447727.jpg@1e_1c_220w_220h_90Q
+Host: Unknown
+
+Request Headers:
+GET /live/ueditor/php/upload/1736785/image/20230401/1680335757447727.jpg@1e_1c_220w_220h_90Q HTTP/1.1
+Host: oss10.huangye88.net
+User-Agent: Mozilla/5.0 (X11; Linux aarch64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://shtongxi.b2b.huangye88.com/
+
+

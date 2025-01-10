@@ -1,0 +1,28 @@
+
+--- Response ---
+Status Code: 200
+Content-Type: Unknown
+
+Response Headers:
+HTTP/1.1 200 OK
+Date: Fri, 10 Jan 2025 03:38:25 GMT
+Content-Type: application/ocsp-response
+Content-Length: 1432
+Connection: keep-alive
+Expires: Tue, 14 Jan 2025 02:31:13 GMT
+ETag: "1156a486d5894441203468104d5a955d17a4f986"
+Last-Modified: Fri, 10 Jan 2025 02:31:14 GMT
+Cache-Control: public, no-transform, must-revalidate, s-maxage=3600
+CF-Cache-Status: HIT
+Age: 560
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 8ff9a257cc34f7a3-LAX
+
+0‚”
+
+
+Connection ID: HTTP_3793031784_288871178_80_54416
+=== End of Transaction ===
+

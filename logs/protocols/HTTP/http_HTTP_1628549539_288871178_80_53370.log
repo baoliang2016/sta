@@ -1,0 +1,34 @@
+
+--- Response ---
+Status Code: 200
+Content-Type: Unknown
+
+Response Headers:
+HTTP/1.1 200 OK
+Content-Length: 0
+Content-Type: text/plain; charset=utf-8
+Date: Fri, 10 Jan 2025 03:38:25 GMT
+
+
+
+Connection ID: HTTP_1628549539_288871178_80_53370
+=== End of Transaction ===
+
+
+--- Response ---
+Status Code: 200
+Content-Type: Unknown
+
+Response Headers:
+HTTP/1.1 200 OK
+Content-Encoding: gzip
+Content-Length: 23
+Content-Type: image/gif
+Server: bfe
+Date: Fri, 10 Jan 2025 03:38:28 GMT
+
+‹
+
+Connection ID: HTTP_1628549539_288871178_80_53370
+=== End of Transaction ===
+

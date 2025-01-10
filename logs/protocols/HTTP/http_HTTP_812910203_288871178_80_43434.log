@@ -1,0 +1,24 @@
+
+--- Response ---
+Status Code: 200
+Content-Type: Unknown
+
+Response Headers:
+HTTP/1.1 200 OK
+Server: JSP3/2.0.14
+Date: Fri, 10 Jan 2025 03:38:25 GMT
+Content-Type: text/javascript
+Content-Length: 232
+Connection: keep-alive
+Content-Encoding: gzip
+Age: 8
+Accept-Ranges: bytes
+Ohc-Global-Saved-Time: Fri, 10 Jan 2025 03:38:17 GMT
+Ohc-Cache-HIT: zz7un84 [2], xzuncache51 [1]
+Ohc-Response-Time: 1 0 0 0 0 0
+
+‹
+
+Connection ID: HTTP_812910203_288871178_80_43434
+=== End of Transaction ===
+

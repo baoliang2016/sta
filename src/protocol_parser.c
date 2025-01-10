@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <strings.h>
+#include <time.h>
 
 // 静态函数声明
 static bool is_valid_dns_packet(const uint8_t *payload, size_t payload_len,
@@ -12,6 +13,7 @@ static bool is_valid_dns_packet(const uint8_t *payload, size_t payload_len,
 static char* dns_decompress_name(const uint8_t *data, size_t len, size_t *offset);
 static struct dns_record* parse_dns_record(const uint8_t *data, size_t len, size_t *offset);
 static void parse_dns_data(struct protocol_data *data, const uint8_t *payload, size_t payload_len);
+static void parse_ftp_data(struct protocol_data *data, const uint8_t *payload, size_t payload_len);
 
 // 常用端口定义
 #define PORT_HTTP 80
@@ -35,6 +37,13 @@ static void parse_dns_data(struct protocol_data *data, const uint8_t *payload, s
 #define DNS_MAX_NAME_LEN 255
 #define DNS_TYPE_SIZE 2
 #define DNS_CLASS_SIZE 2
+
+// FTP命令定义
+#define FTP_CMD_STOR "STOR"    // 上传文件
+#define FTP_CMD_RETR "RETR"    // 下载文件
+#define FTP_CMD_SIZE "SIZE"    // 获取文件大小
+#define FTP_CMD_LIST "LIST"    // 列出文件
+#define FTP_CMD_NLST "NLST"    // 列出文件名
 
 // 识别协议类型
 protocol_type_t identify_protocol(const struct parsed_packet *packet, const uint8_t *payload, size_t payload_len) {
@@ -587,6 +596,74 @@ static void parse_http_data(struct protocol_data *data, const uint8_t *payload, 
     free(headers);
 }
 
+// 解析FTP数据
+static void parse_ftp_data(struct protocol_data *data, const uint8_t *payload, size_t payload_len) {
+    if (!data || !payload || payload_len == 0) {
+        printf("DEBUG: Invalid FTP data\n");
+        return;
+    }
+
+    // 分配并复制数据
+    char *ftp_data = malloc(payload_len + 1);
+    if (!ftp_data) {
+        printf("DEBUG: Failed to allocate memory for FTP data\n");
+        return;
+    }
+
+    memcpy(ftp_data, payload, payload_len);
+    ftp_data[payload_len] = '\0';
+
+    printf("DEBUG: Parsing FTP data: %s\n", ftp_data);
+
+    // 设置时间戳
+    data->ftp.timestamp = time(NULL);
+
+    if (data->is_request) {
+        // 解析FTP命令
+        char *space = strchr(ftp_data, ' ');
+        if (space) {
+            *space = '\0';
+            data->ftp.command = strdup(ftp_data);
+            data->ftp.argument = strdup(space + 1);
+            
+            // 去除参数中的\r\n
+            char *crlf = strchr(data->ftp.argument, '\r');
+            if (crlf) *crlf = '\0';
+            
+            // 判断是否为文件传输命令
+            if (strcmp(data->ftp.command, FTP_CMD_STOR) == 0) {
+                data->ftp.is_upload = true;
+                data->ftp.filename = strdup(data->ftp.argument);
+            } else if (strcmp(data->ftp.command, FTP_CMD_RETR) == 0) {
+                data->ftp.is_upload = false;
+                data->ftp.filename = strdup(data->ftp.argument);
+            }
+            
+            printf("DEBUG: FTP Command: %s, Argument: %s\n", 
+                   data->ftp.command, data->ftp.argument);
+        } else {
+            data->ftp.command = strdup(ftp_data);
+            printf("DEBUG: FTP Command without argument: %s\n", data->ftp.command);
+        }
+    } else {
+        // 解析FTP响应
+        int code;
+        char message[1024];
+        if (sscanf(ftp_data, "%d %[^\r\n]", &code, message) == 2) {
+            data->ftp.response_code = code;
+            data->ftp.response_msg = strdup(message);
+            
+            // 解析文件大小响应 (213 response)
+            if (code == 213) {
+                data->ftp.filesize = strtoull(message, NULL, 10);
+                printf("DEBUG: File size: %zu bytes\n", data->ftp.filesize);
+            }
+        }
+    }
+
+    free(ftp_data);
+}
+
 // 解析协议数据
 struct protocol_data* parse_protocol_data(protocol_type_t proto_type, 
                                         const uint8_t *payload, 
@@ -631,6 +708,9 @@ struct protocol_data* parse_protocol_data(protocol_type_t proto_type,
             break;
         case PROTO_DNS:
             parse_dns_data(data, payload, payload_len);
+            break;
+        case PROTO_FTP:
+            parse_ftp_data(data, payload, payload_len);
             break;
         default:
             printf("DEBUG: Unknown protocol type: %d\n", proto_type);
@@ -721,6 +801,11 @@ void free_protocol_data(struct protocol_data *data) {
             free(rec);
             rec = next;
         }
+    } else if (data->type == PROTO_FTP) {
+        free(data->ftp.command);
+        free(data->ftp.argument);
+        free(data->ftp.response_msg);
+        free(data->ftp.filename);
     }
     
     free(data);

@@ -1,0 +1,49 @@
+
+=== HTTP Transaction at Fri Jan 10 11:32:43 2025
+Source IP: 10.211.55.17
+Source Port: 41130
+Destination IP: 140.210.65.66
+Destination Port: 80
+
+--- Request ---
+Method: GET
+URI: /xunpan/wx.do?mt=3&n=%E4%B8%8A%E6%B5%B7%E7%82%AF%E8%BE%89%E5%BB%BA%E7%AD%91%E8%A3%85%E9%A5%B0%E5%B7%A5%E7%A8%8B%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8&a=%E7%8E%8B%E5%B7%A5&u=1736785&f=com&w=13512162229&x=https%3A%2F%2Foss10.huangye88.net%2Flive%2Fuser%2F1736785%2F1682313355096792100-0.png&l=http%3A%2F%2Foss.huangye88.net%2Flive%2Fuser%2F1736785%2F1516445757023141800-5.jpg
+Host: Unknown
+
+Request Headers:
+GET /xunpan/wx.do?mt=3&n=%E4%B8%8A%E6%B5%B7%E7%82%AF%E8%BE%89%E5%BB%BA%E7%AD%91%E8%A3%85%E9%A5%B0%E5%B7%A5%E7%A8%8B%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8&a=%E7%8E%8B%E5%B7%A5&u=1736785&f=com&w=13512162229&x=https%3A%2F%2Foss10.huangye88.net%2Flive%2Fuser%2F1736785%2F1682313355096792100-0.png&l=http%3A%2F%2Foss.huangye88.net%2Flive%2Fuser%2F1736785%2F1516445757023141800-5.jpg HTTP/1.1
+Host: my.huangye88.com
+User-Agent: Mozilla/5.0 (X11; Linux aarch64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://shtongxi.b2b.huangye88.com/
+Cookie: Hm_lvt_c8184fd80a083199b0e82cc431ab6740=1736153268,1736168982,1736234063,1736333633; accessedcompanysfromse=2801786; PHPSESSID=17364803004773-6f817042288c95e4405d8f5d4eb09ded211316d0; hy88accesscompany=1; ACCESS_BLOCKER_DDOS=5fae78a3c2cac194251b55d5957ab2d7
+Upgrade-Insecure-Requests: 1
+
+
+
+=== HTTP Transaction at Fri Jan 10 11:32:43 2025
+Source IP: 10.211.55.17
+Source Port: 41130
+Destination IP: 140.210.65.66
+Destination Port: 80
+
+--- Request ---
+Method: GET
+URI: /virfycoder/
+Host: Unknown
+
+Request Headers:
+GET /virfycoder/ HTTP/1.1
+Host: my.huangye88.com
+User-Agent: Mozilla/5.0 (X11; Linux aarch64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://my.huangye88.com/xunpan/wx.do?mt=3&n=%E4%B8%8A%E6%B5%B7%E7%82%AF%E8%BE%89%E5%BB%BA%E7%AD%91%E8%A3%85%E9%A5%B0%E5%B7%A5%E7%A8%8B%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8&a=%E7%8E%8B%E5%B7%A5&u=1736785&f=com&w=13512162229&x=https%3A%2F%2Foss10.huangye88.net%2Flive%2Fuser%2F1736785%2F1682313355096792100-0.png&l=http%3A%2F%2Foss.huangye88.net%2Flive%2Fuser%2F1736785%2F1516445757023141800-5.jpg
+Cookie: Hm_lvt_c8184fd80a083199b0e82cc431ab6740=1736153268,1736168982,1736234063,1736333633; accessedcompanysfromse=2801786; PHPSESSID=17364803004773-6f817042288c95e4405d8f5d4eb09ded211316d0; hy88accesscompany=1; ACCESS_BLOCKER_DDOS=5fae78a3c2cac194251b55d5957ab2d7
+
+

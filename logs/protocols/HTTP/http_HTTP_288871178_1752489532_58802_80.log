@@ -1,0 +1,223 @@
+
+=== HTTP Transaction at Fri Jan 10 11:32:36 2025
+Source IP: 10.211.55.17
+Source Port: 58802
+Destination IP: 60.222.116.104
+Destination Port: 80
+
+--- Request ---
+Method: GET
+URI: /js/jquery.js
+Host: Unknown
+
+Request Headers:
+GET /js/jquery.js HTTP/1.1
+Host: static.huangye88.cn
+User-Agent: Mozilla/5.0 (X11; Linux aarch64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://shtongxi.b2b.huangye88.com/
+If-Modified-Since: Tue, 12 Mar 2024 05:59:37 GMT
+If-None-Match: W/"65efef49-16dc5"
+
+
+
+=== HTTP Transaction at Fri Jan 10 11:32:37 2025
+Source IP: 10.211.55.17
+Source Port: 58802
+Destination IP: 60.222.116.104
+Destination Port: 80
+
+--- Request ---
+Method: GET
+URI: /js/sharecode/qrcode.js
+Host: Unknown
+
+Request Headers:
+GET /js/sharecode/qrcode.js HTTP/1.1
+Host: static.huangye88.cn
+User-Agent: Mozilla/5.0 (X11; Linux aarch64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://shtongxi.b2b.huangye88.com/
+If-Modified-Since: Tue, 12 Mar 2024 05:59:37 GMT
+If-None-Match: W/"65efef49-8190"
+
+
+
+=== HTTP Transaction at Fri Jan 10 11:32:37 2025
+Source IP: 10.211.55.17
+Source Port: 58802
+Destination IP: 60.222.116.104
+Destination Port: 80
+
+--- Request ---
+Method: GET
+URI: /js/sharecode/img/tieba.png
+Host: Unknown
+
+Request Headers:
+GET /js/sharecode/img/tieba.png HTTP/1.1
+Host: static.huangye88.cn
+User-Agent: Mozilla/5.0 (X11; Linux aarch64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://shtongxi.b2b.huangye88.com/
+If-Modified-Since: Tue, 12 Mar 2024 05:59:37 GMT
+If-None-Match: "65efef49-64c9"
+
+
+
+=== HTTP Transaction at Fri Jan 10 11:32:38 2025
+Source IP: 10.211.55.17
+Source Port: 58802
+Destination IP: 60.222.116.104
+Destination Port: 80
+
+--- Request ---
+Method: GET
+URI: /images/qiye/0/icon.png?v=1
+Host: Unknown
+
+Request Headers:
+GET /images/qiye/0/icon.png?v=1 HTTP/1.1
+Host: static.huangye88.cn
+User-Agent: Mozilla/5.0 (X11; Linux aarch64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://static.huangye88.cn/images/qiye/0/css.css?v=202309
+
+
+
+=== HTTP Transaction at Fri Jan 10 11:32:38 2025
+Source IP: 10.211.55.17
+Source Port: 58802
+Destination IP: 60.222.116.104
+Destination Port: 80
+
+--- Request ---
+Method: GET
+URI: /bd/api/js/share.js?v=89860593.js
+Host: Unknown
+
+Request Headers:
+GET /bd/api/js/share.js?v=89860593.js HTTP/1.1
+Host: static.huangye88.cn
+User-Agent: Mozilla/5.0 (X11; Linux aarch64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://shtongxi.b2b.huangye88.com/
+If-Modified-Since: Tue, 12 Mar 2024 05:59:39 GMT
+If-None-Match: W/"65efef4b-437f"
+
+
+
+=== HTTP Transaction at Fri Jan 10 11:32:43 2025
+Source IP: 10.211.55.17
+Source Port: 58802
+Destination IP: 60.222.116.104
+Destination Port: 80
+
+--- Request ---
+Method: GET
+URI: /bd/api/js/share/share_api.js?v=226108fe.js
+Host: Unknown
+
+Request Headers:
+GET /bd/api/js/share/share_api.js?v=226108fe.js HTTP/1.1
+Host: static.huangye88.cn
+User-Agent: Mozilla/5.0 (X11; Linux aarch64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://shtongxi.b2b.huangye88.com/
+If-Modified-Since: Tue, 12 Mar 2024 05:59:39 GMT
+If-None-Match: "65efef4b-27c"
+
+
+
+=== HTTP Transaction at Fri Jan 10 11:32:43 2025
+Source IP: 10.211.55.17
+Source Port: 58802
+Destination IP: 60.222.116.104
+Destination Port: 80
+
+--- Request ---
+Method: GET
+URI: /bd/api/js/base/tangram.js?v=37768233.js
+Host: Unknown
+
+Request Headers:
+GET /bd/api/js/base/tangram.js?v=37768233.js HTTP/1.1
+Host: static.huangye88.cn
+User-Agent: Mozilla/5.0 (X11; Linux aarch64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://shtongxi.b2b.huangye88.com/
+If-Modified-Since: Tue, 12 Mar 2024 05:59:39 GMT
+If-None-Match: W/"65efef4b-1aae7"
+
+
+
+=== HTTP Transaction at Fri Jan 10 11:32:43 2025
+Source IP: 10.211.55.17
+Source Port: 58802
+Destination IP: 60.222.116.104
+Destination Port: 80
+
+--- Request ---
+Method: GET
+URI: /bd/api/css/share_style0_24.css
+Host: Unknown
+
+Request Headers:
+GET /bd/api/css/share_style0_24.css HTTP/1.1
+Host: static.huangye88.cn
+User-Agent: Mozilla/5.0 (X11; Linux aarch64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://shtongxi.b2b.huangye88.com/
+If-Modified-Since: Tue, 12 Mar 2024 05:59:39 GMT
+If-None-Match: W/"65efef4b-ee8"
+
+
+
+=== HTTP Transaction at Fri Jan 10 11:32:46 2025
+Source IP: 10.211.55.17
+Source Port: 58802
+Destination IP: 60.222.116.104
+Destination Port: 80
+
+--- Request ---
+Method: GET
+URI: /bd/api/js/trans/logger.js?v=60603cb3.js
+Host: Unknown
+
+Request Headers:
+GET /bd/api/js/trans/logger.js?v=60603cb3.js HTTP/1.1
+Host: static.huangye88.cn
+User-Agent: Mozilla/5.0 (X11; Linux aarch64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://shtongxi.b2b.huangye88.com/
+If-Modified-Since: Tue, 12 Mar 2024 05:59:39 GMT
+If-None-Match: W/"65efef4b-89b"
+
+
