@@ -36,6 +36,13 @@ static size_t ftp_session_count = 0;
 
 // 在文件开头添加 HTTP 会话跟踪结构
 struct http_session {
+    // 5元组信息
+    uint32_t src_ip;
+    uint32_t dst_ip;
+    uint16_t src_port;
+    uint16_t dst_port;
+    uint8_t protocol;
+    
     char connection_id[256];
     time_t timestamp;
     // 请求信息
@@ -52,6 +59,10 @@ struct http_session {
     size_t response_body_len;
     char *content_type;
     FILE *log_file;
+    // 添加请求标识符
+    uint64_t request_id;        // 用于匹配请求和响应
+    bool has_request;           // 标记是否已收到请求
+    bool has_response;          // 标记是否已收到响应
 };
 
 // 添加 HTTP 会话管理
@@ -383,20 +394,15 @@ void log_protocol_data(const struct parsed_packet *packet,
     switch (proto_data->type) {
         case PROTO_HTTP:
             {
-                char connection_id[256];
-                generate_connection_id(connection_id, sizeof(connection_id), packet, proto_data->type);
+                // 生成请求ID（使用时间戳和计数器组合）
+                static uint32_t request_counter = 0;
+                uint64_t current_request_id = ((uint64_t)time(NULL) << 32) | (++request_counter);
                 
                 // 查找或创建会话
                 struct http_session *session = NULL;
-                for (size_t i = 0; i < http_session_count; i++) {
-                    if (strcmp(http_sessions[i].connection_id, connection_id) == 0) {
-                        session = &http_sessions[i];
-                        break;
-                    }
-                }
                 
-                if (!session) {
-                    // 创建新会话
+                if (proto_data->is_request) {
+                    // 对于请求，创建新会话
                     http_sessions = realloc(http_sessions, (http_session_count + 1) * sizeof(struct http_session));
                     if (!http_sessions) {
                         fprintf(stderr, "Failed to allocate memory for HTTP session\n");
@@ -404,39 +410,42 @@ void log_protocol_data(const struct parsed_packet *packet,
                     }
                     session = &http_sessions[http_session_count++];
                     memset(session, 0, sizeof(struct http_session));
-                    strncpy(session->connection_id, connection_id, sizeof(session->connection_id) - 1);
                     
-                    // 创建会话日志文件
+                    // 保存5元组信息
+                    session->src_ip = packet->src_ip;
+                    session->dst_ip = packet->dst_ip;
+                    session->src_port = packet->src_port;
+                    session->dst_port = packet->dst_port;
+                    session->protocol = packet->protocol;
+                    
+                    strncpy(session->connection_id, connection_id, sizeof(session->connection_id) - 1);
+                    session->request_id = current_request_id;
+                    session->has_request = true;
+                    
+                    // 创建新的日志文件（使用请求ID确保唯一性）
                     char log_path[512];
-                    snprintf(log_path, sizeof(log_path), "%s/http_%s.log", dir_path, connection_id);
-                    session->log_file = fopen(log_path, "a");
+                    snprintf(log_path, sizeof(log_path), "%s/http_transaction_%lu.log", dir_path, current_request_id);
+                    session->log_file = fopen(log_path, "w");
                     if (!session->log_file) {
                         fprintf(stderr, "Failed to open HTTP log file: %s\n", log_path);
                         return;
                     }
-                }
-                
-                if (proto_data->is_request) {
+                    
                     // 保存请求信息
                     session->timestamp = time(NULL);
                     if (proto_data->http.method) {
-                        free(session->method);
                         session->method = strdup(proto_data->http.method);
                     }
                     if (proto_data->http.uri) {
-                        free(session->uri);
                         session->uri = strdup(proto_data->http.uri);
                     }
                     if (proto_data->http.host) {
-                        free(session->host);
                         session->host = strdup(proto_data->http.host);
                     }
                     if (proto_data->request) {
-                        free(session->request_headers);
                         session->request_headers = strdup(proto_data->request);
                     }
                     if (proto_data->http.raw_content) {
-                        free(session->request_body);
                         session->request_body = malloc(proto_data->http.raw_content_len);
                         if (session->request_body) {
                             memcpy(session->request_body, proto_data->http.raw_content, 
@@ -445,8 +454,9 @@ void log_protocol_data(const struct parsed_packet *packet,
                         }
                     }
                     
-                    // 记录请求部分
-                    fprintf(session->log_file, "\n=== HTTP Transaction at %s", ctime(&session->timestamp));
+                    // 记录请求信息
+                    fprintf(session->log_file, "=== HTTP Transaction at %s", ctime(&session->timestamp));
+                    fprintf(session->log_file, "Transaction ID: %lu\n", session->request_id);
                     fprintf(session->log_file, "Source IP: %s\n", inet_ntoa(*(struct in_addr*)&packet->src_ip));
                     fprintf(session->log_file, "Source Port: %u\n", packet->src_port);
                     fprintf(session->log_file, "Destination IP: %s\n", inet_ntoa(*(struct in_addr*)&packet->dst_ip));
@@ -460,7 +470,6 @@ void log_protocol_data(const struct parsed_packet *packet,
                     
                     if (session->request_body && session->request_body_len > 0) {
                         fprintf(session->log_file, "\nRequest Body (%zu bytes):\n", session->request_body_len);
-                        // 如果是文本内容，直接打印
                         if (is_printable_content(session->request_body, session->request_body_len)) {
                             fprintf(session->log_file, "%.*s\n", (int)session->request_body_len, 
                                     (char*)session->request_body);
@@ -468,56 +477,107 @@ void log_protocol_data(const struct parsed_packet *packet,
                             fprintf(session->log_file, "[Binary content]\n");
                         }
                     }
-                    
                     fflush(session->log_file);
+                    
                 } else {
-                    // 保存响应信息
-                    session->status_code = proto_data->http.http_status;
-                    if (proto_data->response) {
-                        free(session->response_headers);
-                        session->response_headers = strdup(proto_data->response);
-                    }
-                    if (proto_data->http.content_type) {
-                        free(session->content_type);
-                        session->content_type = strdup(proto_data->http.content_type);
-                    }
-                    if (proto_data->http.decoded_content) {
-                        free(session->response_body);
-                        session->response_body = malloc(proto_data->http.decoded_content_len);
-                        if (session->response_body) {
-                            memcpy(session->response_body, proto_data->http.decoded_content,
-                                   proto_data->http.decoded_content_len);
-                            session->response_body_len = proto_data->http.decoded_content_len;
+                    // 对于响应，查找匹配的请求会话（使用5元组匹配）
+                    size_t session_index;
+                    session = NULL;
+                    
+                    for (session_index = 0; session_index < http_session_count; session_index++) {
+                        struct http_session *s = &http_sessions[session_index];
+                        // 检查是否是对应请求的响应（源IP和目的IP需要反转）
+                        if (s->has_request && !s->has_response &&
+                            s->src_ip == packet->dst_ip &&
+                            s->dst_ip == packet->src_ip &&
+                            s->src_port == packet->dst_port &&
+                            s->dst_port == packet->src_port &&
+                            s->protocol == packet->protocol) {
+                            session = s;
+                            break;
                         }
                     }
                     
-                    // 记录响应部分
-                    fprintf(session->log_file, "\n--- Response ---\n");
-                    fprintf(session->log_file, "Status Code: %d\n", session->status_code);
-                    fprintf(session->log_file, "Content-Type: %s\n", 
-                            session->content_type ? session->content_type : "Unknown");
-                    fprintf(session->log_file, "\nResponse Headers:\n%s\n",
-                            session->response_headers ? session->response_headers : "None");
-                    
-                    if (session->response_body && session->response_body_len > 0) {
-                        fprintf(session->log_file, "\nResponse Body (%zu bytes):\n", 
-                                session->response_body_len);
-                        if (session->content_type && 
-                            (strstr(session->content_type, "text/") || 
-                             strstr(session->content_type, "application/json"))) {
-                            fprintf(session->log_file, "%.*s\n", (int)session->response_body_len,
-                                    (char*)session->response_body);
-                        } else {
-                            fprintf(session->log_file, "[Binary content]\n");
+                    if (session) {
+                        session->has_response = true;
+                        
+                        // 保存响应信息
+                        session->status_code = proto_data->http.http_status;
+                        if (proto_data->response) {
+                            session->response_headers = strdup(proto_data->response);
                         }
+                        if (proto_data->http.content_type) {
+                            session->content_type = strdup(proto_data->http.content_type);
+                        }
+                        if (proto_data->http.decoded_content) {
+                            session->response_body = malloc(proto_data->http.decoded_content_len);
+                            if (session->response_body) {
+                                memcpy(session->response_body, proto_data->http.decoded_content,
+                                       proto_data->http.decoded_content_len);
+                                session->response_body_len = proto_data->http.decoded_content_len;
+                            }
+                        }
+                        
+                        // 记录响应信息
+                        fprintf(session->log_file, "\n--- Response ---\n");
+                        fprintf(session->log_file, "Status Code: %d\n", session->status_code);
+                        fprintf(session->log_file, "Content-Type: %s\n", 
+                                session->content_type ? session->content_type : "Unknown");
+                        fprintf(session->log_file, "\nResponse Headers:\n%s\n",
+                                session->response_headers ? session->response_headers : "None");
+                        
+                        if (session->response_body && session->response_body_len > 0) {
+                            fprintf(session->log_file, "\nResponse Body (%zu bytes):\n", 
+                                    session->response_body_len);
+                            if (session->content_type && 
+                                (strstr(session->content_type, "text/") || 
+                                 strstr(session->content_type, "application/json"))) {
+                                fprintf(session->log_file, "%.*s\n", (int)session->response_body_len,
+                                        (char*)session->response_body);
+                            } else {
+                                fprintf(session->log_file, "[Binary content]\n");
+                            }
+                        }
+                        
+                        fprintf(session->log_file, "\n=== End of Transaction ===\n");
+                        fflush(session->log_file);
+                        fclose(session->log_file);
+                        session->log_file = NULL;
+                        
+                        // 清理会话
+                        cleanup_http_session(session);
+                        
+                        // 从会话列表中移除已完成的会话
+                        if (session_index < http_session_count - 1) {
+                            memmove(&http_sessions[session_index], 
+                                    &http_sessions[session_index + 1],
+                                    (http_session_count - session_index - 1) * sizeof(struct http_session));
+                        }
+                        http_session_count--;
+                    } else {
+                        // 找不到匹配的请求，记录错误
+                        fprintf(stderr, "No matching HTTP request found for response from %s:%u to %s:%u\n",
+                                inet_ntoa(*(struct in_addr*)&packet->src_ip),
+                                packet->src_port,
+                                inet_ntoa(*(struct in_addr*)&packet->dst_ip),
+                                packet->dst_port);
                     }
-                    
-                    fprintf(session->log_file, "\nConnection ID: %s\n", session->connection_id);
-                    fprintf(session->log_file, "=== End of Transaction ===\n\n");
-                    fflush(session->log_file);
-                    
-                    // 清理会话数据
-                    cleanup_http_session(session);
+                }
+                
+                // 在日志中添加5元组信息
+                if (session && session->log_file) {
+                    if (proto_data->is_request) {
+                        fprintf(session->log_file, "=== HTTP Transaction at %s", ctime(&session->timestamp));
+                        fprintf(session->log_file, "5-Tuple Information:\n");
+                        fprintf(session->log_file, "Client IP: %s\n", inet_ntoa(*(struct in_addr*)&session->src_ip));
+                        fprintf(session->log_file, "Client Port: %u\n", session->src_port);
+                        fprintf(session->log_file, "Server IP: %s\n", inet_ntoa(*(struct in_addr*)&session->dst_ip));
+                        fprintf(session->log_file, "Server Port: %u\n", session->dst_port);
+                        fprintf(session->log_file, "Protocol: %s\n", session->protocol == IPPROTO_TCP ? "TCP" : "UDP");
+                        fprintf(session->log_file, "\n--- Request ---\n");
+                        // ... 其他请求日志记录代码保持不变 ...
+                    }
+                    // ... 响应日志记录代码保持不变 ...
                 }
             }
             break;
